@@ -1,0 +1,3 @@
+rootProject.name = 'Mobile_App_Bootstrap'
+
+include ':app'
