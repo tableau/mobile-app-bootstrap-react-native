@@ -12,19 +12,12 @@ import {
 import { NavigationActions } from 'react-navigation';
 import { Card } from 'react-native-elements';
 
-interface CardModel {
-    readonly title: string;
-    readonly description: string;
-    readonly imageUri: ImageURISource;
-    readonly webViewUri: string;
-}
-
-export default class Home extends React.Component<{}> {
-    private onCardPress = (webViewUri: string, title: string) => {
+export default class Home extends React.Component {
+    onCardPress = (webViewUri, title) => {
         this.props.navigation.navigate('Details', {uri: webViewUri, headerTitle: title});
     };
 
-    private renderItem = ({ item }: { item: CardModel }): JSX.Element => {
+    renderItem = ({ item }) => {
         return (
             <TouchableOpacity style={styles.item} onPress={() => this.onCardPress(item.webViewUri, item.title)}>
                 <Card
@@ -42,10 +35,10 @@ export default class Home extends React.Component<{}> {
         );
     };
 
-    private keyExtractor = (item: any, index: number) => item.title + '-' + index;
+    keyExtractor = (item, index) => item.title + '-' + index;
 
-    public render(): JSX.Element {
-        const cards: ReadonlyArray<CardModel> = [
+    render() {
+        const cards = [
             {
                 title: 'Help',
                 imageUri: require('../../assets/HelpViz.png'),

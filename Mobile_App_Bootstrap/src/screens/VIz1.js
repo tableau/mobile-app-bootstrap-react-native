@@ -7,7 +7,7 @@ import {
     WebView
 } from 'react-native';
 
-export default class Viz1 extends React.Component<> {
+export default class Viz1 extends React.Component {
     render() {
         return (
             <View style={styles.container}>

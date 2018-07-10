@@ -8,8 +8,8 @@ import {
     WebViewUriSource
 } from 'react-native';
 
-export default class CardDetails extends React.Component<> {
-    public render() {
+export default class CardDetails extends React.Component {
+    render() {
         console.log(this.props.navigation.state.params.uri)
         return (
             <View style={styles.container}>
