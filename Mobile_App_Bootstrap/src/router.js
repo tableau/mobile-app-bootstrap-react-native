@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ViewStyle, Image, StyleSheet, View, AppRegistry } from 'react-native';
-import { StackNavigator, TabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { StackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import Viz1 from './screens/Viz1';
 import Viz2 from './screens/Viz2';
@@ -33,33 +33,33 @@ const HomeStack = StackNavigator({
     },
 });
 
-export const RootNavigator = TabNavigator({
+export const RootNavigator = createBottomTabNavigator({
     Home: {
         screen: HomeStack,
         navigationOptions: {
             tabBarLabel: 'Home',
-            tabBarIcon: tintColor => <Icon name="ios-home" size={35} color={tintColor} />,
+            tabBarIcon: <Icon name="ios-home" size={35} />,
         },
     },
     Viz1: {
         screen: Viz1,
         navigationOptions: {
             tabBarLabel: 'Viz1',
-            tabBarIcon: tintColor => <Icon name="ios-pulse" size={35} color={tintColor} />
+            tabBarIcon: <Icon name="ios-pulse" size={35} />
         },
     },
     Viz2: {
         screen: Viz2,
         navigationOptions: {
             tabBarLabel: 'Viz2',
-            tabBarIcon: tintColor => <Icon name="ios-pulse" size={35} color={tintColor} />
+            tabBarIcon: <Icon name="ios-pulse" size={35} />
         },
     },
     Viz3: {
         screen: Viz3,
         navigationOptions: {
             tabBarLabel: 'Viz3',
-            tabBarIcon: tintColor => <Icon name="ios-pulse" size={35} color={tintColor} />
+            tabBarIcon: <Icon name="ios-pulse" size={35} />
         },
     },
 });
