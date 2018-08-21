@@ -7,18 +7,30 @@ import {
     WebView,
     WebViewUriSource
 } from 'react-native';
+import WKWebView from 'react-native-wkwebview-reborn';
 
 export default class CardDetails extends React.Component {
     render() {
         console.log(this.props.navigation.state.params.uri)
-        return (
-            <View style={styles.container}>
-                <WebView
-                    source={{uri: this.props.navigation.state.params.uri}}
-                    style={styles.webview}
-                />
-            </View>
-        );
+        if (Platform.OS === 'android') {
+            return (
+                <View style={styles.container}>
+                    <WebView
+                        source={{uri: this.props.navigation.state.params.uri}}
+                        style={styles.webview}
+                    />
+                </View>
+            );
+        } else {
+            return (
+                <View style={styles.container}>
+                    <WKWebView
+                        source={{uri: this.props.navigation.state.params.uri}}
+                        style={styles.webview}
+                    />
+                </View>
+            );
+        }
     }
 }
 

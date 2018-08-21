@@ -1,1 +1,4 @@
 Mobile_App_Bootstrap/ios/build
+Mobile_App_Bootstrap/android/.gradle
+Mobile_App_Bootstrap/android/app/build
+Mobile_App_Bootstrap/android/build
