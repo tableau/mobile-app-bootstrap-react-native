@@ -53,7 +53,7 @@ export default class Home extends React.Component {
                 title: 'Stories',
                 imageUri: require('../../assets/StoriesViz.png'),
                 description: 'Discover how people are using Tableau.',
-                webViewUri: 'http://www.tableau.com/stories',
+                webViewUri: 'https://www.tableau.com/stories',
             }, {
                 title: 'Download',
                 imageUri: require('../../assets/Download.png'),
@@ -63,12 +63,12 @@ export default class Home extends React.Component {
                 title: 'Explore',
                 imageUri: require('../../assets/ExploreViz.png'),
                 description: 'Read about other Tableau Products.',
-                webViewUri: 'http://www.tableau.com/products',
+                webViewUri: 'https://www.tableau.com/products',
             }, {
                 title: 'Learn',
-                imageUri: require('../../assets/AngularLogo.png'),
+                imageUri: require('../../assets/ReactNativeLogo.png'),
                 description: 'Learn React Native.',
-                webViewUri: 'http://ionicframework.com/docs/overview/',
+                webViewUri: 'https://facebook.github.io/react-native/',
             },
         ];
 

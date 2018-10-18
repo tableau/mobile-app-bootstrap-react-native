@@ -15,7 +15,7 @@ const HomeStack = StackNavigator({
         navigationOptions: {
             headerTitle: (() => {
                 return (
-                    <View style={{flex: 1}}>
+                    <View style={styles.headerView}>
                         <Image
                             source={require('../assets/HeaderLogo.png')}
                             style={styles.headerImage}
@@ -65,8 +65,17 @@ export const RootNavigator = createBottomTabNavigator({
 });
 
 const styles = StyleSheet.create({
+    headerView: {
+        flex: 1,
+        flexDirection: 'row',
+        'justifyContent': 'center',
+        'alignItems': 'center',
+        height: 60
+    },
     headerImage: {
         flex: 1,
-        resizeMode: 'contain'
+        resizeMode: 'contain',
+        height: '100%',
+        width: undefined
     },
 });

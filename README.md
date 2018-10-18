@@ -11,16 +11,16 @@ Mac:
 1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
 2. Install [Visual Studio Code](https://code.visualstudio.com/)
   * VS Code is the main IDE we use for React Native development; it's where you'll do most of your editing.
-2. Install Xcode for creating iOS builds
-3. Install Android Studio for creating Android builds
+3. Install Xcode for creating iOS builds
+4. Install Android Studio for creating Android builds
   * You might need these added to your `~/.bash_profile`:
     `export ANDROID_HOME=$HOME/Library/Android/sdk`
     `export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"`
-4. Install [homebrew](https://brew.sh/)
-5. `brew install node@8`
+5. Install [homebrew](https://brew.sh/)
+6. `brew install node@8`
   * This uses homebrew to install node
   * We've run into some problems with node 10, so enjoy node 8
-6. `brew install watchman`
+7. `brew install watchman`
   * watchman enables some fun auto-reload-on-file-change capabilities in React Native
 
 
@@ -28,7 +28,7 @@ Windows:
 
 1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
 2. Install [Visual Studio Code](https://code.visualstudio.com/)
-  * VS Code is the main IDE we use; it's where you'll do most of your editing.
+  * VS Code is the main IDE we use for React Native development; it's where you'll do most of your editing.
 3. Follow Step 1 and Step 2 in these excellent [Windows installation instructions](https://shift.infinite.red/getting-started-with-react-native-development-on-windows-90d85a72ae65)
 
 Note that we've run into problems running watchman on Windows, so the auto-reload functionality won't be available. Also note that iOS building/running is only possible on a Mac. We do almost all of our mobile development using Macs.
