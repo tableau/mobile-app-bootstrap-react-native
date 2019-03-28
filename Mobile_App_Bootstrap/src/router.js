@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ViewStyle, Image, StyleSheet, View, AppRegistry } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { StackNavigator, createBottomTabNavigator } from 'react-navigation';
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 
 import Viz1 from './screens/Viz1';
 import Viz2 from './screens/Viz2';
@@ -9,7 +9,7 @@ import Viz3 from './screens/Viz3';
 import Home from './screens/Home';
 import CardDetails from './screens/CardDetails';
 
-const HomeStack = StackNavigator({
+const HomeStack = createStackNavigator({
     Home: {
         screen: Home,
         navigationOptions: {

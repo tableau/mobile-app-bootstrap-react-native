@@ -17,11 +17,12 @@ Mac:
     `export ANDROID_HOME=$HOME/Library/Android/sdk`
     `export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"`
 5. Install [homebrew](https://brew.sh/)
-6. `brew install node@8`
+6. `brew install node`
   * This uses homebrew to install node
-  * We've run into some problems with node 10, so enjoy node 8
 7. `brew install watchman`
   * watchman enables some fun auto-reload-on-file-change capabilities in React Native
+8. `npm install -g react-native-cli`
+  * This installs the React Native Command Line Interface
 
 
 Windows:

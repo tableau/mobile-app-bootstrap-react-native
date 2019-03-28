@@ -2,10 +2,8 @@ import * as React from 'react';
 import {
     Platform,
     StyleSheet,
-    Text,
     View,
-    WebView,
-    WebViewUriSource
+    WebView
 } from 'react-native';
 import WKWebView from 'react-native-wkwebview-reborn';
 

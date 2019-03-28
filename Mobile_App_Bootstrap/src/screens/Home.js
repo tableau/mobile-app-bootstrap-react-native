@@ -1,15 +1,11 @@
 import * as React from 'react';
 import {
     FlatList,
-    Platform,
     StyleSheet,
     Text,
     TouchableOpacity,
-    View,
-    ImageURISource,
-    WebViewUriSource
+    View
 } from 'react-native';
-import { NavigationActions } from 'react-navigation';
 import { Card } from 'react-native-elements';
 
 export default class Home extends React.Component {
