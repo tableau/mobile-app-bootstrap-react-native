@@ -8,7 +8,7 @@ Provides a look at example code for how to embed Tableau vizzes inside of a Reac
 
 Mac:
 
-1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
+1. Download the code for the app from the [github repository](https://github.com/tableau/mobile-app-bootstrap-react-native)
 2. Install [Visual Studio Code](https://code.visualstudio.com/)
   * VS Code is the main IDE we use for React Native development; it's where you'll do most of your editing.
 3. Install Xcode for creating iOS builds
@@ -26,7 +26,7 @@ Mac:
 
 Windows:
 
-1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
+1. Download the code for the app from the [github repository](https://github.com/tableau/mobile-app-bootstrap-react-native)
 2. Install [Visual Studio Code](https://code.visualstudio.com/)
   * VS Code is the main IDE we use for React Native development; it's where you'll do most of your editing.
 3. Follow Step 1 and Step 2 in these excellent [Windows installation instructions](https://shift.infinite.red/getting-started-with-react-native-development-on-windows-90d85a72ae65)
@@ -79,7 +79,7 @@ This collection is supported by the community and not officially 'blessed' by Ta
 
 If you have problems getting it to work, feel free to email us with questions, but we can't promise quick responses. The [Tableau Developer Community](developer.tableau.com) is also a great resource if you need help.
 
-A standard disclaimer: mobile-app-bootstrap is made available AS-IS with no support and no warranty whatsoever. Despite efforts to write good and useful code there may be bugs that cause unexpected and undesirable behavior. The software is strictly “use at your own risk.”
+A standard disclaimer: mobile-app-bootstrap-react-native is made available AS-IS with no support and no warranty whatsoever. Despite efforts to write good and useful code there may be bugs that cause unexpected and undesirable behavior. The software is strictly “use at your own risk.”
 
 The good news: This is intended to be a self-service tool. You are free to modify it in any way to meet your needs.
 
