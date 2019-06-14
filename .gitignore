@@ -4,3 +4,6 @@ Mobile_App_Bootstrap/android/app/build
 Mobile_App_Bootstrap/android/build
 Mobile_App_Bootstrap/ios/Mobile_App_Bootstrap.xcodeproj/xcuserdata
 Mobile_App_Bootstrap/ios/Mobile_App_Bootstrap.xcodeproj/project.xcworkspace/xcuserdata
+Mobile_App_Bootstrap/libc.so
+Mobile_App_Bootstrap/libc.so_pixel
+Mobile_App_Bootstrap/output.txt

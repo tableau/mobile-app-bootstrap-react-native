@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.2.0"
+    "@babel/core": "^7.4.0",
+    "@babel/runtime": "^7.4.2",
+    "@react-native-community/eslint-config": "^0.0.3",
+    "babel-jest": "^24.5.0",
+    "eslint": "^5.15.3",
+    "jest": "^24.5.0",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
   },
   "scripts": {
     "start": "react-native start",
@@ -17,11 +22,12 @@
     "preset": "react-native"
   },
   "dependencies": {
-    "react": "16.3.1",
-    "react-native": "^0.55.2",
-    "react-native-elements": "^0.19.1",
-    "react-native-vector-icons": "^5.0.0",
+    "react": "16.8.3",
+    "react-native": "0.59.2",
+    "react-native-elements": "^1.1.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-vector-icons": "^6.4.2",
     "react-native-wkwebview-reborn": "^1.21.0",
-    "react-navigation": "^2.11.2"
+    "react-navigation": "^3.5.1"
   }
 }
