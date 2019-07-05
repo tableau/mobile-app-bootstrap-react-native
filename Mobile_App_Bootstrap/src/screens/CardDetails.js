@@ -1,34 +1,21 @@
 import * as React from 'react';
 import {
-    Platform,
     StyleSheet,
-    View,
-    WebView
+    View
 } from 'react-native';
-import WKWebView from 'react-native-wkwebview-reborn';
+import WebView from 'react-native-webview';
 
 export default class CardDetails extends React.Component {
     render() {
         console.log(this.props.navigation.state.params.uri)
-        if (Platform.OS === 'android') {
-            return (
-                <View style={styles.container}>
-                    <WebView
-                        source={{uri: this.props.navigation.state.params.uri}}
-                        style={styles.webview}
-                    />
-                </View>
-            );
-        } else {
-            return (
-                <View style={styles.container}>
-                    <WKWebView
-                        source={{uri: this.props.navigation.state.params.uri}}
-                        style={styles.webview}
-                    />
-                </View>
-            );
-        }
+        return (
+            <View style={styles.container}>
+                <WebView
+                    source={{uri: this.props.navigation.state.params.uri}}
+                    style={styles.webview}
+                />
+            </View>
+        );
     }
 }
 
