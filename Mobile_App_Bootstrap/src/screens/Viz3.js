@@ -1,33 +1,20 @@
 import * as React from 'react';
 import {
-    Platform,
     StyleSheet,
-    View,
-    WebView
+    View
 } from 'react-native';
-import WKWebView from 'react-native-wkwebview-reborn';
+import WebView from 'react-native-webview';
 
 export default class Viz3 extends React.Component {
     render() {
-        if (Platform.OS === 'android') {
-            return (
-                <View style={styles.container}>
-                    <WebView
-                        source={{uri: 'https://public.tableau.com/views/10_0SuperstoreSales/Overview?:embed=y&:tooltip=n&:toolbar=n&:showVizHome=no'}}
-                        style={styles.webview}
-                    />
-                </View>
-            );
-        } else {
-            return (
-                <View style={styles.container}>
-                    <WKWebView
-                        source={{uri: 'https://public.tableau.com/views/10_0SuperstoreSales/Overview?:embed=y&:tooltip=n&:toolbar=n&:showVizHome=no'}}
-                        style={styles.webview}
-                    />
-                </View>
-            );
-        }
+        return (
+            <View style={styles.container}>
+                <WebView
+                    source={{uri: 'https://public.tableau.com/views/10_0SuperstoreSales/Overview?:embed=y&:tooltip=n&:toolbar=n&:showVizHome=no&:mobile=y&:showAppBanner=n'}}
+                    style={styles.webview}
+                />
+            </View>
+        );
     }
 }
 

@@ -70,9 +70,17 @@ The core of this project was created using `create-react-native-app`, as outline
 ## Customization Points
 
 * `Home.js` shows the Home tab. A tap on one of the cards opens a CardDetails object, displaying the provided URL in a webview.
-* `Viz1.js`, `Viz2.js`, `Viz3.js` show the three viz tabs. They open the hard-coded URLs provided. Note that WKWebView is used on iOS, while the default WebView is used on Android. You'll want to change these URLs to point to your own vizzes.
+* `Viz1.js`, `Viz2.js`, `Viz3.js` show the three viz tabs. They open the hard-coded URLs provided. Note that WKWebView is used behind the scenes on iOS, while the default WebView is used on Android. You'll want to change these URLs to point to your own vizzes.
 * `router.js` configures the bottom tabs using [React Navigation](https://reactnavigation.org/).
 
+## URL parameters
+The sample URLs use several [query parameters](https://onlinehelp.tableau.com/current/pro/desktop/en-us/embed_list.htm) which are especially helpful for mobile embedded vizzes:
+* `:embed=y`: Requests the embedded version of the viz, without the server navigation UI.
+* `:tooltip=n`: Removes tooltips. Used in this demo to keep the user on the viz.
+* `:toolbar=n`: Removes the viz toolbar. 
+* `:showVizHome=no`: Used in this demo to not show Tableau Public home information. Unnecessary when connecting to servers not named Tableau Public.
+* `:mobile=y`: Explicitly requests a touch-friendly UI, rather than relying on Tableau Server's User-Agent sniffing.
+* `:showAppBanner=n`: Removes the "Open in Tableau Public" banner at the top of the viz.
 
 # Support
 
