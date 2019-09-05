@@ -1,8 +1,11 @@
 # Mobile App Bootstrap: React Native
 [![Community Supported](https://img.shields.io/badge/Support%20Level-Community%20Supported-457387.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
 
-Provides a look at example code for how to embed Tableau vizzes inside of a React Native app that runs on iOS and Android.
+Provides a look at example code for how to embed Tableau visualizations inside of a React Native app that runs on iOS and Android.
 
+## More Info
+
+The [2018 Tableau Conference included a session on the Mobile App Bootstrap](https://tc18.tableau.com/learn/sessions/32250), outlining some business use cases and providing some more technical background. The session video and slides are available from that TC18 page. 
 
 ## Installation
 
