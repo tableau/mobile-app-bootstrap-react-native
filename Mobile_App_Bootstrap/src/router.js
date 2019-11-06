@@ -38,28 +38,36 @@ export const RootNavigator = createBottomTabNavigator({
         screen: HomeStack,
         navigationOptions: {
             tabBarLabel: 'Home',
-            tabBarIcon: <Icon name="ios-home" size={35} />,
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-home' color={tintColor} size={30} style={styles.icon}/>
+            ),
         },
     },
     Viz1: {
         screen: Viz1,
         navigationOptions: {
             tabBarLabel: 'Viz1',
-            tabBarIcon: <Icon name="ios-pulse" size={35} />
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-pulse' color={tintColor} size={30} style={styles.icon}/>
+            ),
         },
     },
     Viz2: {
         screen: Viz2,
         navigationOptions: {
             tabBarLabel: 'Viz2',
-            tabBarIcon: <Icon name="ios-pulse" size={35} />
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-pulse' color={tintColor} size={30} style={styles.icon}/>
+            ),
         },
     },
     Viz3: {
         screen: Viz3,
         navigationOptions: {
             tabBarLabel: 'Viz3',
-            tabBarIcon: <Icon name="ios-pulse" size={35} />
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name='ios-pulse' color={tintColor} size={30} style={styles.icon}/>
+            ),
         },
     },
 });
