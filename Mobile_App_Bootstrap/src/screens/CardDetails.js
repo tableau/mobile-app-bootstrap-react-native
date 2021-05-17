@@ -7,11 +7,10 @@ import WebView from 'react-native-webview';
 
 export default class CardDetails extends React.Component {
     render() {
-        console.log(this.props.navigation.state.params.uri)
         return (
             <View style={styles.container}>
                 <WebView
-                    source={{uri: this.props.navigation.state.params.uri}}
+                    source={{uri: this.props.route.params.uri}}
                     style={styles.webview}
                 />
             </View>

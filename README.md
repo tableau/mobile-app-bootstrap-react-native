@@ -5,7 +5,7 @@ Provides a look at example code for how to embed Tableau visualizations inside o
 
 ## More Info
 
-The [2018 Tableau Conference included a session on the Mobile App Bootstrap](https://tc18.tableau.com/learn/sessions/32250), outlining some business use cases and providing some more technical background. The session video and slides are available from that TC18 page. 
+The [2019 Tableau Conference included a session on the Mobile App Bootstrap](https://tc19.tableau.com/learn/sessions/mobile-app-bootstrap-custom-mobile-apps-embedded-tableau-visualizations] as did the [2018 Tableau Conference](https://tc18.tableau.com/learn/sessions/32250). The sessions outline some business use cases and provide some more technical background. The session video and slides are available from those TC pages. 
 
 ## Installation
 
@@ -45,6 +45,7 @@ From the `Mobile_App_Bootstrap` directory, run `npm install`
 ## Starting the sample app
 
 iOS
+* `cd ios`, `pod install`, `cd ..` will install the native iOS cocoapods libraries needed by the libraries included in `node_modules`.
 * `react-native run-ios` runs the iOS build in the default simulator.
   * `react-native run-ios --simulator="MySimulatorName"` will run the iOS build using the simulator you specify. 
     * More details on [specifying simulators](https://facebook.github.io/react-native/docs/running-on-simulator-ios.html)
