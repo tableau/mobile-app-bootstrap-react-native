@@ -18,11 +18,11 @@ export default class Home extends React.Component {
             <TouchableOpacity style={styles.item} onPress={() => this.onCardPress(item.webViewUri, item.title)}>
                 <Card
                     title={item.title}
-                    image={item.imageUri}
                     containerStyle={styles.container}
                     wrapperStyle={styles.wrapper}
                     titleStyle={styles.title}
                 >
+                    <Card.Image source={item.imageUri}/>
                     <Text style={styles.description}>
                         {item.description}
                     </Text>

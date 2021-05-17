@@ -1,5 +1,5 @@
-import { createAppContainer } from 'react-navigation';
-import { RootNavigator } from './src/router';
+import { navContainer } from './src/router';
 
-const App = createAppContainer(RootNavigator);
+// Code is in the src folder as much as possible.
+const App = navContainer;
 export default App;
