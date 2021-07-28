@@ -5,7 +5,7 @@ Provides a look at example code for how to embed Tableau visualizations inside o
 
 ## More Info
 
-The [2019 Tableau Conference included a session on the Mobile App Bootstrap](https://tc19.tableau.com/learn/sessions/mobile-app-bootstrap-custom-mobile-apps-embedded-tableau-visualizations] as did the [2018 Tableau Conference](https://tc18.tableau.com/learn/sessions/32250). The sessions outline some business use cases and provide some more technical background. The session video and slides are available from those TC pages. 
+The [2019 Tableau Conference included a session on the Mobile App Bootstrap](https://tc19.tableau.com/learn/sessions/mobile-app-bootstrap-custom-mobile-apps-embedded-tableau-visualizations) as did the [2018 Tableau Conference](https://tc18.tableau.com/learn/sessions/32250). The sessions outline some business use cases and provide some more technical background. The session video and slides are available from those TC pages. 
 
 ## Installation
 
